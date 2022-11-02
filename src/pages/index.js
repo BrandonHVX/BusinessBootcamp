@@ -25,7 +25,7 @@ export default class Index extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "registration", ...this.state })
     })
       .then(() => navigate("/thanks"))
       .catch(error => alert(error));
@@ -45,7 +45,7 @@ export default class Index extends Component {
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container center">
       
-        <img class="navbar-brand" src={Logo}  />
+        <img class="navbar-brand" src={Logo} />
      
     </div>
 </nav>
