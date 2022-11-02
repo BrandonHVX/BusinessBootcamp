@@ -25,7 +25,7 @@ export default class Index extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "registration", ...this.state })
+      body: encode({ "form-name": "contact", ...this.state })
     })
       .then(() => navigate("/thanks"))
       .catch(error => alert(error));
