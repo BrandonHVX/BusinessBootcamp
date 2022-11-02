@@ -25,7 +25,7 @@ export default class Index extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contacts", ...this.state })
+      body: encode({ "form-name": "registration", ...this.state })
     })
       .then(() => navigate("/thanks"))
       .catch(error => alert(error));
@@ -92,7 +92,7 @@ export default class Index extends Component {
                 <div class="card-body">
                 <form 
                    data-netlify="true"
-                   name="contacts"
+                   name="registration"
                    method="post"
                 
                 onSubmit={this.handleSubmit}>
