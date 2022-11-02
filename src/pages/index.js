@@ -14,7 +14,7 @@ const encode = (data) => {
 export default class Index extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", message: "" };
+    this.state = { name: "", email: "", phone: "", business: "" };
   }
 
 
@@ -27,7 +27,7 @@ export default class Index extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then(() => navigate("/thanks"))
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -37,7 +37,7 @@ export default class Index extends Component {
 
 
   render() {
-          const { name, email, message } = this.state;
+          const { name, email, phone, business } = this.state;
 
     return (
       <Layout>
@@ -102,8 +102,13 @@ export default class Index extends Component {
             </label>
           </p>
           <p>
-            <label>
-              Message: <textarea name="message" value={message} onChange={this.handleChange} />
+          <label>
+              Phone <input type="number" name="phone" value={phone} onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+          <label>
+              Name of Business <input type="text" name="business" value={business} onChange={this.handleChange} />
             </label>
           </p>
           <p>
