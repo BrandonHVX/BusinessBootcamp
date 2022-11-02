@@ -90,7 +90,12 @@ export default class Index extends Component {
                 <div class="card-header bg-primary text-white"><i class="fa fa-user"></i> Personal Information
                 </div>
                 <div class="card-body">
-                <form onSubmit={this.handleSubmit}>
+                <form 
+                   data-netlify="true"
+                   name="contact"
+                   method="post"
+                
+                onSubmit={this.handleSubmit}>
           <p>
             <label>
               Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
