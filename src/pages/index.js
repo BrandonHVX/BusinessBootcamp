@@ -41,7 +41,6 @@ export default class Index extends Component {
   render() {
           const { name, email, phone, business } = this.state;
 
-          
     return (
       <Layout>
     <Seo title="District 9: Small Business Bootcamp" />
