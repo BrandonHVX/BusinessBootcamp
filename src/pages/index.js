@@ -13,8 +13,8 @@ const encode = (data) => {
 
 
 export default class Index extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { name: "", email: "", phone: "", business: "" };
   }
 
@@ -33,8 +33,6 @@ export default class Index extends Component {
       .catch(error => alert(error));
 
     e.preventDefault();
-    
-    
   };
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -43,7 +41,7 @@ export default class Index extends Component {
   render() {
           const { name, email, phone, business } = this.state;
 
-   
+          
     return (
       <Layout>
     <Seo title="District 9: Small Business Bootcamp" />
