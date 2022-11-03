@@ -7,9 +7,7 @@ import Seo from "../components/seo"
 
 
 export default class Index extends Component {
-    constructor(props) {
-        super(props);
-    }
+
    
 
   render() {
@@ -26,7 +24,7 @@ export default class Index extends Component {
 <section class="jumbotron text-center mt-5">
     <div class="container">
         <h1 class="jumbotron-heading">Thank You!</h1>
-        <p class="lead text-muted mb-0">Your registration     {this.props.name}
+        <p class="lead text-muted mb-0">Your registration     
  has been sent</p>
 
     
