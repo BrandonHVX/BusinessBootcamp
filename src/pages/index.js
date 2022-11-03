@@ -76,12 +76,15 @@ export default class Index extends Component {
                 <div class="card-header bg-primary text-white"><i class="fa fa-user"></i> Personal Information
                 </div>
                 <div class="card-body">
+ 
                 <form 
                    data-netlify="true"
                    name="registration"
                    method="post"
                 
                 onSubmit={this.handleSubmit}>
+
+<input type="hidden" name="bot-field" />
                    <div class="row mb-3">
     <label for="inputEmail3" class="col-sm-6 col-form-label">Name</label>
     <div class="col-sm-12">
@@ -116,8 +119,12 @@ export default class Index extends Component {
             <div class="card bg-light mb-3">
                 <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Contact</div>
                 <div class="card-body">
-                    <p>Miami-Dade County: District 9 Commissioner's Office</p>
+                    <h5>Miami-Dade County: District 9 Commissioner's Office</h5>
                     <p>Email: district9@miamidade.gov</p>
+                </div>
+                <div class="card-body">
+                    <h5>Tools For Change</h5>
+                    <p>Phone: 305-200-5568</p>
                 </div>
               </div>
         </div>
