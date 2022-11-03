@@ -51,33 +51,17 @@ export default class Index extends Component {
 </nav>
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading">REGISTRATION FORM</h1>
+        <h1 class="jumbotron-heading">Registration Form</h1>
         <p class="lead text-muted mb-0">District 9 Small Business Bootcamp</p>
     </div>
 </section>
-<section class='mt-5'>
-<div class="container">
-        <div class="row">
-            <div class="col">
-                <h5>About</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25"/>
-                <p class="mb-3">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la 
-                    composition et la mise en page avant impression.
-                </p>
-            </div>
 
-         
-        </div>
-    </div>
-    </section>
 <div class="container">
     <div class="row">
         <div class="col">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    
                 </ol>
             </nav>
         </div>
@@ -85,7 +69,7 @@ export default class Index extends Component {
 </div>
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-12 col-md-6">
             <div class="card">
                 <div class="card-header bg-primary text-white"><i class="fa fa-user"></i> Personal Information
                 </div>
@@ -96,34 +80,37 @@ export default class Index extends Component {
                    method="post"
                 
                 onSubmit={this.handleSubmit}>
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-          <label>
-              Phone <input type="number" name="phone" value={phone} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-          <label>
-              Name of Business <input type="text" name="business" value={business} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+                   <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-6 col-form-label">Name</label>
+    <div class="col-sm-12">
+    <input className='form-control' id="validationCustom01" type="text" name="name"  value={name} onChange={this.handleChange}required/>    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-6 col-form-label">Email</label>
+    <div class="col-sm-12">
+    <input className='form-control' id="validationCustom02" type="email" name="email" value={email} onChange={this.handleChange} required/>    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-6 col-form-label">Phone</label>
+    <div class="col-sm-12">
+    <input className='form-control' id="validationCustom03" type="tel" name="phone" value={phone} onChange={this.handleChange} required />    </div>
+  </div>
+  
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-6 col-form-label">Name of Business</label>
+    <div class="col-sm-12">
+    <input className='form-control' id="validationCustom04" type="tel" name="business" value={business} onChange={this.handleChange} required />    </div>
+  </div>
+         
+  <button type='submit' class="btn btn-primary mt-5">Submit</button>
+
+      
         </form>
                 </div>
             </div>
+            
         </div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-md-6">
             <div class="card bg-light mb-3">
                 <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Contact</div>
                 <div class="card-body">

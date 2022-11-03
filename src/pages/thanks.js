@@ -47,26 +47,20 @@ export default class Index extends Component {
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container center">
       
-        <img class="navbar-brand" src={Logo}  />
+        <img class="navbar-brand"   src={Logo}  />
      
     </div>
 </nav>
-<section class="jumbotron text-center">
+<section class="jumbotron text-center mt-5">
     <div class="container">
-        <h1 class="jumbotron-heading">REGISTRATION FORM</h1>
-        <p class="lead text-muted mb-0">District 9 Small Business Bootcamp</p>
+        <h1 class="jumbotron-heading">Thank You!</h1>
+        <p class="lead text-muted mb-0">Your registration has been sent</p>
     </div>
 </section>
 <section class='mt-5'>
-<div class="container">
+<div class="container text-center">
         <div class="row">
-            <div class="col">
-                <h5>Your registration has been sent</h5>
-                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25"/>
-                <p class="mb-3">
-                 Thank You! 
-                </p>
-            </div>
+         
 
          
         </div>
