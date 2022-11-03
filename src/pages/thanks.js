@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 
-export default class Index extends Component {
+export default class Thanks extends Component {
 
    
 

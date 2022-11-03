@@ -12,8 +12,8 @@
  import * as React from "react"
  import PropTypes from "prop-types"
  import { useStaticQuery, graphql } from "gatsby"
- import { Navbar,Nav, NavDropdown, Container } from "react-bootstrap"
- import Header from "./header"
+
+
  
 
  import "./App.scss"
@@ -33,7 +33,7 @@
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
+ 
       <div
     
       >
