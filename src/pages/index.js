@@ -104,7 +104,7 @@ export default class Index extends Component {
   <div class="row mb-3">
     <label for="inputPassword3" class="col-sm-6 col-form-label">Name of Business</label>
     <div class="col-sm-12">
-    <input className='form-control' id="validationCustom04" type="tel" name="business" value={business} onChange={this.handleChange} required />    </div>
+    <input className='form-control' id="validationCustom04" type="text" name="business" value={business} onChange={this.handleChange} required />    </div>
   </div>
          
   <button type='submit' class="btn btn-primary mt-5">Submit</button>
