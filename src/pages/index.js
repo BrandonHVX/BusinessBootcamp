@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { navigate } from 'gatsby';
 import Layout from '../components/layout';
 import Biz from "../images/biz-1.jpg"
-import Logo from "../images/bootcamp.png"
+import Logo from "../images/bootcamp.png";
 
 
 const encode = data => {
