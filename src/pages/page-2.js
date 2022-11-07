@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Biz from "../images/Biz-1.jpg"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
