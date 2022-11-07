@@ -41,7 +41,6 @@
         <footer className="text-center"
     
         >
-          © {new Date().getFullYear()} &middot; District 9 Small Business Bootcamp
         </footer>
       </div>
     </>

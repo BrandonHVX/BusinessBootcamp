@@ -1,23 +1,27 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
 import { navigate } from "gatsby-link";
-import Logo from "../images/Bootcamp.png"
+import Biz from "../images/Biz-1.jpg"
+
+import Logo from "../images/bootcamp.png"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 
 
-export default class Thanks extends Component {
-
-   
-
-  render() {
-    return (
+const SecondPage = () => (
       <Layout>
-    <Seo title="Page two" />
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    
+    <nav class="navbar navbar-expand-md " 
+    style={{
+      backgroundImage:`url(${Biz})` ,
+      backgroundSize: `cover`,
+      backgroundPosition: `center`,
+      backgroundColor: `blu`
+      
+      }} >
+
     <div class="container center">
       
-        <img class="navbar-brand"   src={Logo}  />
+        <img class="navbar-brand" src={Logo} />
      
     </div>
 </nav>
@@ -42,12 +46,12 @@ export default class Thanks extends Component {
 
 
 
-{/* <!-- Footer --> */}
+
 
   </Layout>
-    )
-  }
-}
+)
+
+export default SecondPage
 
 
 
