@@ -61,9 +61,9 @@ const Form = () => {
               <img class="navbar-brand" src={Logo} />
               </div>
           </nav>
-          <div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-8 ">
+          <div class="container center">
+    <div class="row ">
+        <div class="col-sm-12 col-lg-12 ">
             <div class="card">
                 <div class="card-header bg-primary text-white text-center">  <h2>Thank You, {firstName}! </h2>
                 </div>
